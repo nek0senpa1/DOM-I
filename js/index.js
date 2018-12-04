@@ -38,5 +38,44 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
-let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+const logo = document.getElementById("logo-img");
+logo.src = "img/logo.png";
+
+const logo2 = document.getElementById("cta-img");
+logo2.src = "img/header-img.png";
+
+const logo3 = document.getElementById("middle-img");
+logo3.src = "img/mid-page-accent.jpg";
+
+const ctathing = document.querySelector('.cta-text h1');
+ctathing.textContent = siteContent.cta.h1;
+
+const ctatexty = document.querySelector('.cta-text button');
+ctatexty.textContent = siteContent.cta.button;
+
+const topThing = document.querySelectorAll('.text-content h4');
+
+let widget = Array.from(topThing);
+
+widget[0].textContent = siteContent["main-content"]["features-h4"];
+widget[1].textContent = siteContent["main-content"]["about-h4"];
+widget[2].textContent = siteContent["main-content"]["services-h4"];
+widget[3].textContent = siteContent["main-content"]["product-h4"];
+widget[4].textContent = siteContent["main-content"]["vision-h4"];
+
+const middleThing = document.querySelectorAll('.text-content p');
+
+let widget2 = Array.from(middleThing);
+
+
+widget2[0].textContent = siteContent["main-content"]["features-content"];
+widget2[1].textContent = siteContent["main-content"]["about-content"];
+widget2[2].textContent = siteContent["main-content"]["services-content"];
+widget2[3].textContent = siteContent["main-content"]["product-content"];
+widget2[4].textContent = siteContent["main-content"]["vision-content"];
+
+
+
+
+
+
